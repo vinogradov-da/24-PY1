@@ -8,12 +8,12 @@ def count_letters(text):
                 letter_count[symbol_lower] += 1
             else:
                 letter_count[symbol_lower] = 1
-    return {key: value for key, value in letter_count.items() if key.islower()}
+    return letter_count
 
 
 def calculate_frequency(letter_count):
-    letters = sum(letter_count.values())  # общее количество букв
-    frequency = {key: round(value / letters, 2) for key, value in letter_count.items()}
+    letters = sum(letter_count.values()) 
+    frequency = {key: value / letters for key, value in letter_count.items()}
     return frequency
 
 
