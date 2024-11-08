@@ -1,4 +1,4 @@
-def find_common_participants(first, second, sign="," ):
+def find_common_participants(first, second, sign=","):
     first = set(first.split(sign))
     second = set(second.split(sign))
     
