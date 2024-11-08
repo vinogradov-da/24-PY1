@@ -1,6 +1,7 @@
 def find_common_participants(first, second, sign="," ):
     first = set(first.split(sign))
     second = set(second.split(sign))
+    
     common_participants = first.intersection(second)
     return sorted(list(common_participants))
 
